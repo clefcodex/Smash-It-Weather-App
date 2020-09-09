@@ -10,7 +10,6 @@ const cityDisplay = document.querySelector(".cityDisplay");
 
 
 let city;
-// const key = "5573ba8ed632e20049794b7e65e73e57";
 const key = os.environ.get('KEY');
 let storedSearch;
 
