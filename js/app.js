@@ -1,3 +1,5 @@
+import os
+
 // SELECT ELEMENTS
 const dateDisplay = document.querySelector(".display_date");
 const submitBtn = document.querySelector("#submitBtn");
@@ -8,7 +10,8 @@ const cityDisplay = document.querySelector(".cityDisplay");
 
 
 let city;
-const key = "5573ba8ed632e20049794b7e65e73e57";
+// const key = "5573ba8ed632e20049794b7e65e73e57";
+const key = os.environ.get('KEY');
 let storedSearch;
 
 
